@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/background.jpg'); /* Add your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.container {
+    display: flex;
+    margin-top: 60px; /* Space for the fixed navbar */
+}
+
+.left-menu {
+    width: 200px;
+    background-color: rgba(244, 244, 244, 0.9); /* Semi-transparent background */
+    padding: 15px;
+    transition: width 0.3s;
+}
+
+.left-menu.collapsed {
+    width: 0;
+    overflow: hidden;
+}
+
+.main-content {
+    flex: 1;
+    padding: 15px;
+}
+
+.right-panel {
+    width: 200px;
+    background-color: rgba(244, 244, 244, 0.9); /* Semi-transparent background */
+    padding: 15px;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
